@@ -10,6 +10,8 @@ import edu.wpi.first.wpilibj.RobotController;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import frc.robot.Constants.DriveConstants;
 
+import java.io.Console;
+
 import org.littletonrobotics.junction.AutoLogOutput;
 import org.littletonrobotics.junction.Logger;
 
@@ -117,6 +119,7 @@ public class DriveSubsystem extends SubsystemBase {
       rightEncoder.getDistance());
 
     field2d.setRobotPose(getPose());
+    System.out.println("hallo");
   }
 
   @Override
